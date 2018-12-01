@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/lightBluePrimary</color>
+    <color name="colorPrimaryDark">@color/lightBlueDark</color>
+    <color name="colorPrimaryLight">@color/lightBlueLight</color>
+    <color name="colorAccent">@color/greyPrimary</color>
+    <color name="colorDivider">@color/greyLight</color>
+    <color name="colorActivityAlert">#88ff0000</color>
+    
+    <color name="lightBlueDark">#0288d1</color>
+    <color name="lightBlueLight">#B3E5FC</color>
+    <color name="lightBluePrimary">#03A9F4</color>
+    <color name="greyDark">#757575</color>
+    <color name="greyLight">#BDBDBD</color>
+    <color name="greyPrimary">#9E9E9E</color>
+
+
+
+</resources>

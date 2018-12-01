@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/monitor_background"
+        android:adjustViewBounds="true"
+        android:layout_margin="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heartbeat_max"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/heartbeat_real"
+            android:layout_marginBottom="@dimen/monitor_number_margin"
+            style="@style/MonitorLimits"
+            android:text="100"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heartbeat_real"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/MonitorReal"
+            android:text="80"
+            />
+
+        <TextView
+            android:id="@+id/heartbeat_bpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/heartbeat_real"
+            app:layout_constraintTop_toTopOf="@id/heartbeat_real"
+            app:layout_constraintBottom_toBottomOf="@id/heartbeat_real"
+            android:layout_marginLeft="8dp"
+            style="@style/MonitorReal"
+            android:textSize="12sp"
+            android:text="@string/monitor_result_bpm"
+            />
+
+    <TextView
+        android:id="@+id/heartbeat_min"
+        style="@style/MonitorLimits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40"
+        android:layout_marginTop="@dimen/monitor_number_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heartbeat_real" />
+
+
+
+    </android.support.constraint.ConstraintLayout>
